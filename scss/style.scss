@@ -1,0 +1,124 @@
+$primaryColor: #11041e;
+$opacityColor: rgba(17, 4, 30, 0.6);
+
+html, body {
+    margin: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Exo 2', sans-serif;
+}
+
+main {
+    background-image: url(../images/hots_background.jpg);
+    background-repeat: no-repeat;
+    background-color: $primaryColor;
+    background-size: cover;
+}
+
+h1 {
+  margin-top: 0;  
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 300;
+}
+
+h1, h2 {
+    color: #FFF;
+    text-align: center;  
+}
+
+/*-------------------------
+        
+--------------------------*/
+.sidebar {
+    background: $opacityColor;
+    width: 25%;
+    height: 100vh;
+    position: relative;
+    overflow-y: scroll;
+    float: left;
+}
+
+#hots_logo {
+    width: 80%;
+    margin: auto;
+    margin-top: 37.5px;
+    display: block;
+}
+
+.member, .opponent {
+    background: $opacityColor;
+    color: #FFF;
+    margin: 20px;
+    padding: 20px;
+}
+
+.opponent {
+    width: 100%;
+    margin: auto;
+}
+
+/*-------------------------
+        MAIN
+--------------------------*/
+
+.search_opponent {
+    width: 75%;
+    margin-top: 37.5px;
+    float: left;
+}
+
+.input_container {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.input_field {
+    color: #FFF;
+    font-size: 1.5em;
+    background:rgba(17, 4, 30, 0.75);
+    border: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+input::placeholder {
+    color: rgb(204, 204, 255);
+}
+
+/*-------------------------
+        BUTTONS
+--------------------------*/
+button {
+    color: #FFF;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    display: block;
+    background: linear-gradient(to bottom, #ff9500, #ff5500);
+    border: 0;
+    margin: auto;
+    margin-top: 20px;
+    width: 150px;
+    padding: 12px;
+}
+
+#search_button {
+    margin-bottom: 20px;
+}
+
+#generate_button {
+    width: 80%;
+    left: 37.5px;
+    bottom: 37.5px;
+}
+
+/*-------------------------*/
+.clear {
+    clear: both;
+}
